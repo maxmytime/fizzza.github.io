@@ -42,10 +42,10 @@
                     <div class="user-panel">
                         <form action="">
                             <button type="button" class="btn btn-nav-phone">
-                                <img src="img/icons/call-answer.svg" alt="Телефон">
+                                <img src="img/icons/phone.png" alt="Телефон">
                             </button>
                             <button type="button" class="btn btn-nav-lk">
-                                <img src="img/icons/user.svg" alt="Телефон">
+                                <img src="img/icons/user.png" alt="Телефон">
                                 Личный кабинет</button>
                         </form>
                     </div>
@@ -89,12 +89,79 @@
         </div>
 
     </section> -->
-    <div class="container">
-        <div class="row">
-            <div class="col-7">
-                <h1>Деньги для бизнеса <br> Онлайн от 1 дня</h1>
+
+    <div class="section-top">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="baner">
+                        <h1>
+                            <span class="money">Деньги</span> для бизнеса</span> <br>
+                            <span class="h1-weight-300">Онлайн от 1 дня</span>
+                        </h1>
+                        <div class="baner-discription">Займы для компаний по всей РФ! Без залога.</div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="baner-item">
+                                    <div class="baner-item-discription">сумма <br>
+                                        займа до</div>
+                                    <h3>30 млн.</h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="baner-item">
+                                    <div class="baner-item-discription">срок <br>
+                                        финансирования до</div>
+                                    <h3>6 мес.</h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="baner-item">
+                                    <div class="baner-item-discription">ставка в <br>
+                                        месяц</div>
+                                    <h3>от 2%</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form-inline no-gutters form-position">
+                            <input class="input-style w-100" id="party" name="party" type="text" size="300" id="inputPassword2" placeholder="Название компании или ИП">
+
+                            <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.11.1/dist/css/suggestions.min.css" type="text/css" rel="stylesheet" />
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                            <!--[if lt IE 10]>
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
+                            <![endif]-->
+                            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.11.1/dist/js/jquery.suggestions.min.js"></script>
+                            <script type="text/javascript">
+                                $("#party").suggestions({
+                                    token: "b8164d26a63c45573d2e65ec49020d75e158c43b",
+                                    type: "PARTY",
+                                    count: 12,
+                                    onSelect: function(suggestion) {
+                                        console.log(suggestion);
+                                    }
+                                });
+                            </script>
+                            <button type="submit" class="btn btn-bg-pink btn-postion-absolute">оформить заявку</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="baner-img">
+                        <img src="img/icons/7-layers.png" alt="Как это работает">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="baner-img-scrol-maus">
+                        <img src="img/icons/5-layers.png" alt="Как это работает">
+                    </div>
+                </div>
+
             </div>
         </div>
+
     </div>
 
     <div class="content">
@@ -142,6 +209,24 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h2>Програмные продукты</h2>
+                        <input class="input-style w-100" id="party" name="party" type="text" size="300"/>
+
+                        <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.11.1/dist/css/suggestions.min.css" type="text/css" rel="stylesheet" />
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                        <!--[if lt IE 10]>
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
+                        <![endif]-->
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.11.1/dist/js/jquery.suggestions.min.js"></script>
+                        <script type="text/javascript">
+                            $("#party").suggestions({
+                                token: "b8164d26a63c45573d2e65ec49020d75e158c43b",
+                                type: "PARTY",
+                                count: 12,
+                                onSelect: function(suggestion) {
+                                    console.log(suggestion);
+                                }
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
